@@ -1,0 +1,33 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "Pro Exchange Data Mining Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenqingyu/btcc-pro-exchange-data-Tracking.git"
+  },
+  "keywords": [
+    "Data",
+    "Mining",
+    "Pro",
+    "Exchange",
+    "BTCC",
+    "Wenqing",
+    "Yu"
+  ],
+  "author": "Wenqing Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenqingyu/btcc-pro-exchange-data-Tracking/issues"
+  },
+  "homepage": "https://github.com/wenqingyu/btcc-pro-exchange-data-Tracking#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "mysql": "^2.10.2",
+    "nodemailer": "^2.2.1"
+  }
+}
