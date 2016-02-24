@@ -4,7 +4,9 @@
   "description": "Pro Exchange Data Mining Project",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node generateReport.js"
+
   },
   "repository": {
     "type": "git",

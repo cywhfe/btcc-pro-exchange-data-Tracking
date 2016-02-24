@@ -56,18 +56,16 @@ module.exports = {
         var msg = "\n";
 
         async.forEach(data, function(info, callback){
-            msg += "\nMaker: " + info.email;
-            msg += " (" + info.company + " )";
-            msg += "\nTrader Name: " + info.name;
+            msg += "\nMaker: " + info.company + " (" + info.email + ")";
 
             msg += "\n\nLast 24h Trading Data" +
-            "\nMaker Order:  " + info.makeOrdersInLastDay +
-            "\nTaker Order:  " + info.takeOrdersInLastDay;
+            "\n- Maker Order:  " + info.makeOrdersInLastDay +
+            "\n- Taker Order:  " + info.takeOrdersInLastDay;
 
             msg += "\n\nProfit and Loss" +
-            "\nGross Profit: " + info.profitAudit.gross_profit +
-            "\nFee Total: " + info.profitAudit.fee_total +
-            "\nNet Profit:: " + info.profitAudit.net_profit;
+            "\n- Gross Profit: " + info.profitAudit.gross_profit +
+            "\n- Fee Total: " + info.profitAudit.fee_total +
+            "\n- Net Profit: " + info.profitAudit.net_profit;
 
             msg += "\n\n\n";
         });

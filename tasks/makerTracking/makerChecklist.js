@@ -7,7 +7,14 @@ var mysql = require('mysql');
 var async = require('async');
 var db = require('./../../db.json');
 
-var connection = mysql.createConnection(db.prodDB);
+var connection = mysql.createConnection(db.prodDB, function(err){
+    if(err){
+        console.log(err);
+        return;
+    }else{
+        console.log("Database login as " + connection.threadId);
+    }
+});
 
 var count = 0;
 

@@ -22,8 +22,6 @@ async.waterfall([
 });
 
 
-process.exit();
-
 //connection.end();
 
 
